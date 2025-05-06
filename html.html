@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ePortfolio - HTML</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">ePortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="html.html">HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+        <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero bg-light text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">HTML: The Backbone of the Web</h1>
+    <p class="lead">Discover the power of HTML in structuring content and building the foundation of modern websites.</p>
+  </div>
+</section>
+
+<!-- Theoretical Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Theoretical Concepts of HTML</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">What is HTML?</h3>
+          <p class="card-text">HTML (HyperText Markup Language) is the standard language for creating web pages. It uses tags to structure content, such as headings, paragraphs, lists, and links, forming the skeleton of any website.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Semantic HTML</h3>
+          <p class="card-text">Semantic HTML uses meaningful tags like &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, and &lt;section&gt; to improve accessibility, SEO, and code readability.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Attributes and Elements</h3>
+          <p class="card-text">HTML elements are defined by tags, and attributes provide additional information (e.g., id, class, src, href). For example, &lt;img src="image.jpg" alt="Description"&gt; embeds an image.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Forms and Input</h3>
+          <p class="card-text">HTML forms collect user input using elements like &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt;. They are essential for interactivity, such as login or search functionalities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Practical Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Practical Examples of HTML</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Semantic Structure</h3>
+          <p class="card-text">A well-structured HTML page using semantic elements for better organization and accessibility.</p>
+          <pre class="bg-light p-3 rounded">
+&lt;header&gt;
+  &lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;Content here...&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+  &lt;p&gt;© 2025&lt;/p&gt;
+&lt;/footer&gt;
+          </pre>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Interactive Form</h3>
+          <p class="card-text">A simple form demonstrating user input collection.</p>
+          <form class="p-3 bg-light rounded">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Media Embedding</h3>
+          <p class="card-text">Embed images and videos to enhance content.</p>
+          <div class="p-3 bg-light rounded text-center">
+            <img src="https://via.placeholder.com/300x150" alt="Sample Image" class="img-fluid rounded mb-3">
+            <p>Code: &lt;img src="image.jpg" alt="Sample Image"&gt;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Accessible Table</h3>
+          <p class="card-text">A table with proper accessibility features.</p>
+          <table class="table table-bordered bg-light rounded">
+            <caption>Sample Data Table</caption>
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>Developer</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>Designer</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 ePortfolio. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
